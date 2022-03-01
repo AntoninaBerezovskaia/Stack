@@ -1,24 +1,29 @@
-import java.util.Stack;
+
 
 public class RestrictedDataStructure {
     public static void main(String[] args)
     {
+        Stack myStack =new Stack(4);
 
-        Stack<Character> newStack = new Stack<>();
+        myStack.push(3);
+        myStack.push(67);
+        myStack.push(6);
+        myStack.push(9);
 
-        newStack.push('A');
-        newStack.push('B');
-        newStack.push('C');
-        newStack.push('D');
-        newStack.push('E');
-        newStack.push('F');
-        newStack.push('G');
 
-        System.out.println("Initial Stack: " + newStack);
-        System.out.println("Popped element: " + newStack.pop());
-        System.out.println("Is Stack empty? " +  newStack.isEmpty());
-        System.out.println("Size of Stack : " + newStack.size());
-        System.out.println("Popped element: " + newStack.pop());
-        System.out.println("Current Stack " + newStack);
+        System.out.println("Is Stack full? " +  myStack.isFull());
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("Is Stack empty? " +  myStack.isEmpty());
+        System.out.println("Is Stack full? " +  myStack.isFull());
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("The top element is "+myStack.readTop());
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("Is Stack empty? " +  myStack.isEmpty());
+
+
+
+
+
     }
 }
